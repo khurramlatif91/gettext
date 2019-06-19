@@ -1,0 +1,48 @@
+# Variable needed by LTLIBINTL.
+top_builddir=../..
+
+# Variable needed by xgettext.
+GETTEXTDATADIR="$abs_top_srcdir"
+export GETTEXTDATADIR
+
+OBJEXT="o"
+EXEEXT=".exe"
+CC="gcc"
+CFLAGS=" -O2"
+CXX="g++"
+CXXFLAGS=" -O2"
+CPPFLAGS="-I/c/pgBuild32/include"
+LDFLAGS="-L/c/pgBuild32/lib -Wl,--disable-auto-import"
+LTLIBINTL="${top_builddir}/intl/libintl.la -L/c/pgBuild32/lib -liconv -R/c/pgBuild32/lib "
+JAVA_CHOICE="yes"
+BUILDJAVA="no"
+TESTJAVA="no"
+CSHARP_CHOICE="any"
+BUILDCSHARP="no"
+TESTCSHARP="no"
+TESTLIBASPRINTF="yes"
+GLIBC2="no"
+LOCALE_FR="French_France.1252"
+LOCALE_FR_UTF8="none"
+LOCALE_JA="none"
+host_os="mingw32"
+ARCHIVE_VERSION="0.19.8"
+
+: ${GETTEXT=tstgettext}
+: ${NGETTEXT=tstngettext}
+: ${XGETTEXT=xgettext}
+: ${MSGATTRIB=msgattrib}
+: ${MSGCAT=msgcat}
+: ${MSGCMP=msgcmp}
+: ${MSGCOMM=msgcomm}
+: ${MSGCONV=msgconv}
+: ${MSGEN=msgen}
+: ${MSGEXEC=msgexec}
+: ${MSGFILTER=msgfilter}
+: ${MSGFMT=msgfmt}
+: ${MSGGREP=msggrep}
+: ${MSGINIT=msginit}
+: ${MSGMERGE=msgmerge}
+: ${MSGUNFMT=msgunfmt}
+: ${MSGUNIQ=msguniq}
+: ${RECODE=recode}
